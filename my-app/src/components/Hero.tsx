@@ -10,7 +10,7 @@ const Hero: React.FC = () => {
       style={{ alignItems: "center", textAlign: "center" }}
     >
       <motion.div
-        initial={{ opacity: 0, y: 50 }}
+        // Removed initial opacity 0 to ensure visibility if animation fails
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 1 }}
       >

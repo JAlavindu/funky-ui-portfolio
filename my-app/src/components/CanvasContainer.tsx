@@ -1,6 +1,6 @@
 import React, { Suspense } from "react";
 import { Canvas } from "@react-three/fiber";
-import Scene from "./Scene";
+import Scene from "./SceneComponent";
 
 const CanvasContainer: React.FC = () => {
   return (
@@ -11,7 +11,7 @@ const CanvasContainer: React.FC = () => {
         left: 0,
         width: "100%",
         height: "100%",
-        zIndex: 0,
+        zIndex: -1,
         pointerEvents: "none",
       }}
     >
